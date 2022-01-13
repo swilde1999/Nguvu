@@ -1,0 +1,27 @@
+<!doctype html>     <!-- Author:         Samuel Wilde -->
+<html lang = "en">  <!-- Date:           04/27/2020-->
+    <head>          <!-- Description:   Form to update an item-->
+        <title>Update Item</title>
+        <meta charset ="utf-8"/>
+        <link rel ="stylesheet" href="nuguvu.css" />
+    </head>
+    <body>
+        <div id ="wrapper">
+            <header><h1>Product Update</h1></header>
+            <form action ="updateItem.php" method ="post">
+                <fieldset>
+                    <legend>Look up Item</legend>
+                    <p>What database do you want to update? 1 for weight loss and 2 for weight gain.</p>
+                    <label class ="entry">Item Number: </label>
+                    <input type ="text" name="databaseSelect" size ="1" maxlength="1" autofocus/>
+                    <p>What is the item number for the record you wish to update?</p>
+                    <label class ="entry">Item Number: </label>
+                    <input type ="text" name="productID" size ="3" maxlength="3"/>
+                </fieldset>
+                <input type="reset" name='reset' value="Clear"/>
+                <input type="submit" name="submit" value="Search" />
+            </form>
+            <footer>&copy; 2020 The Nuguvu</footer>
+        </div>
+    </body>
+</html>
